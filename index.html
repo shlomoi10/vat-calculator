@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון מע"מ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>מחשבון מע"מ</h1>
+        <div class="input-group">
+            <label for="amount">הכנס סכום:</label>
+            <input type="number" id="amount" step="0.01" placeholder="הכנס סכום">
+        </div>
+        <div class="results">
+            <div class="result-row">
+                <span class="label">סכום ללא מע"מ:</span>
+                <span id="amount-without-vat">0.00</span>
+            </div>
+            <div class="result-row">
+                <span class="label">מע"מ 17%:</span>
+                <span id="vat-17">0.00</span>
+            </div>
+            <div class="result-row">
+                <span class="label">סכום ה-18%:</span>
+                <span id="amount-18">0.00</span>
+            </div>
+            <div class="result-row">
+                <span class="label">סה"כ עם 18%:</span>
+                <div class="amount-with-copy">
+                    <span id="total-with-18">0.00</span>
+                    <i class="fas fa-copy copy-btn" title="העתק סכום"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
